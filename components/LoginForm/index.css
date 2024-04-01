@@ -1,0 +1,92 @@
+/* Write your CSS code here */
+* {
+  font-family: 'Roboto';
+}
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  height: 100vh;
+}
+.login-img-desktop {
+  max-height: 450px;
+  max-width: 550px;
+}
+.login-form {
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 60px 80px;
+}
+.login-form-img {
+  max-height: 70px;
+  max-width: 200px;
+  margin: 20px;
+}
+.input-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px;
+  align-self: flex-start;
+}
+.label-style {
+  color: #475569;
+  font-weight: 800;
+  font-size: 14px;
+  margin: 3px;
+}
+.input-field {
+  background-color: #d7dfe9;
+  padding: 10px;
+  color: #475569;
+  font-weight: 400;
+  border-width: 0px;
+  width: 250px;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+}
+.login-btn {
+  align-self: center;
+  background-color: #0b69ff;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border-width: 0px;
+  border-radius: 5px;
+  width: 250px;
+  margin-top: 4px;
+}
+.err-msg {
+  align-self: flex-start;
+  color: #ff0b37;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.login-img {
+  display: none;
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  .login-img-desktop {
+    display: none;
+  }
+  .login-img {
+    display: flex;
+    max-height: 150px;
+    max-width: 300px;
+  }
+  .login-form {
+    height: 100vh;
+  }
+}
