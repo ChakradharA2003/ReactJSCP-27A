@@ -1,0 +1,83 @@
+/* Write your CSS code here */
+* {
+  font-family: 'Roboto';
+}
+.home-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: auto;
+}
+.home-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 45%;
+  order: -1;
+}
+.heading {
+  color: #1e293b;
+  font-size: 45px;
+  text-align: left;
+}
+.home-img-desktop {
+  order: 0;
+  max-height: 500px;
+  max-width: 500px;
+}
+.home-para {
+  color: #64748b;
+  font-size: 24px;
+  text-align: left;
+}
+.shop-btn {
+  background-color: #0b69ff;
+  color: #ffffff;
+  padding: 10px 40px 10px;
+  border-width: 0px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  margin-left: 8px;
+}
+.home-img {
+  display: none;
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  .home-img {
+    display: flex;
+    height: 200px;
+    width: 200px;
+  }
+  .home-img-desktop {
+    display: none;
+  }
+  .content {
+    align-items: center;
+    width: 100%;
+  }
+  .heading {
+    font-size: 35px;
+    text-align: center;
+  }
+  .home-para {
+    font-size: 14px;
+  }
+  .home-container {
+    overflow: auto;
+  }
+  .home-content {
+    height: 100%;
+  }
+}
